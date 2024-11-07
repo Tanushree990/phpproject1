@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Clean font */
+    background-color: #f4f4f4; /* Light gray background */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px; /* Maximum width for content */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Padding around content */
+    background-color: #ffffff; /* White background for forms and content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Headings */
+h2 {
+    color: #333; /* Darker text for headings */
+    border-bottom: 2px solid #007bff; /* Blue underline for headings */
+    padding-bottom: 10px; /* Space below heading */
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px; /* Space below forms */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Padding inside inputs */
+    margin: 10px 0; /* Space above and below inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Smooth transition for focus effect */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff; /* Blue border on focus */
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff; /* Blue background for buttons */
+    color: white; /* White text color */
+    padding: 12px 20px; /* Padding inside buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Button hover effects */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+th, td {
+    padding: 12px; /* Padding inside table cells */
+    text-align: left; /* Left-align text in cells */
+}
+
+th {
+    background-color: #007bff; /* Blue background for header cells */
+    color: white; /* White text color for header cells */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+/* Link Styles */
+a {
+    color: #007bff; /* Blue color for links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Error Message Styles */
+.error-message {
+    color: red; /* Red color for error messages */
+}
+
+/* Success Message Styles */
+.success-message {
+    color: green; /* Green color for success messages */
+}
+
+/* Responsive Design Adjustments */
+
+/* Mobile Styles (for screens less than or equal to 600px) */
+@media (max-width: 600px) {
+   body {
+       padding: 10px;
+   }
+
+   .container {
+       padding: 15px;
+   }
+
+   input[type="text"],
+   input[type="email"],
+   input[type="password"],
+   textarea,
+   select,
+   button {
+       font-size: 14px; /* Slightly smaller font size on mobile devices */
+   }
+}
